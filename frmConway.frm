@@ -149,7 +149,7 @@ Private Sub timerRun_Timer()
 
             If chkCell(idx).Value = 0 Then
                 ' it's currently dead
-                If liveNeighbours >= 3 Then
+                If liveNeighbours = 3 Then
                     futureState(idx) = True
                 End If
             Else
